@@ -1,0 +1,7 @@
+
+Entities
+Threads description : 
+  has user
+  either image or text
+  likes
+  comments

@@ -1,0 +1,9 @@
+
+
+Todo:
+  [] - create a user auth functionality & page
+  [] - create threads posting functionality
+  [] - likes functinality
+  [] - commenting functionality
+  [] - follow & unfollow users
+  [] - search for user
