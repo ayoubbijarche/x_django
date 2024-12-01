@@ -11,11 +11,14 @@
 <body>
     <div class="container">
         <div class="card">
+
             <h1>Sign Up</h1>
-            <form>
+
+            <form method="POST">
+              {% csrf_token %}
                 <div class="input-group">
                     <label for="name">username</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="username" required>
                 </div>
                 <div class="input-group">
                     <label for="email">email</label>
@@ -25,8 +28,21 @@
                     <label for="password">password</label>
                     <input type="password" id="password" name="password" required>
                 </div>
+                <div class="input-group">
+                    <label for="password">confirm password</label>
+                    <input type="password" id="password" name="passwordconfirm" required>
+                </div>
                 <button type="submit" class="btn btn-primary">Sign up</button>
             </form>
+            {% if messages %}
+    {% for message in messages %}
+        {% if messages.tags == 'error' %}
+            <center><h4 style="color: firebrick;">{{message}}</h4></center>
+        {% else %}
+            <center><h4 style="color: dodgerblue;">{{message}}</h4></center>
+        {% endif %}
+    {% endfor %}
+{% endif %}
             <p class="switch-page" onclick="window.location.href='{%url 'login' %}'">
                 Already have an account? <a>Log in</a>
             </p>
