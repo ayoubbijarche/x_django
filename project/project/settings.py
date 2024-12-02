@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "userauth",
-    "home"
+    "home",
+    "userprofile"
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,11 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["userauth/template/" , "home/template/"],
+        'DIRS': [
+                    "userauth/template/" ,
+                    "home/template/",
+                    "userprofile/template/",
+                ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

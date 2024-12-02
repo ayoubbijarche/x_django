@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --background: #f5f5f5;
-    --foreground: #000000;
-    --card-background: #ffffff;
+    --background: #1a1a1a;
+    --foreground: #ffffff;
+    --card-background: #2d2d2d;
     --primary: #22c55e;
     --primary-hover: #16a34a;
     font-family: "Roboto";
@@ -61,9 +61,11 @@ input {
     width: 100%;
     padding: 0.5rem;
     font-size: 1rem;
-    border: 1px solid #d1d5db;
+    border: 1px solid #404040;
     border-radius: 4px;
     transition: border-color 0.15s ease-in-out;
+    background-color: #333333;
+    color: var(--foreground);
 }
 
 input:focus {

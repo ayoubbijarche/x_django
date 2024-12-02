@@ -1,7 +1,11 @@
 
 
+to fix : 
+  [*] - login redirection
+  [*] - specific user login
+
 Todo:
-  [] - create a user auth functionality & page
+  [*] - create a user auth functionality & page
   [] - create threads posting functionality
   [] - likes functinality
   [] - commenting functionality
